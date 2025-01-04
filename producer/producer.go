@@ -18,6 +18,10 @@ func main() {
 	app.Listen(":3000")
 }
 
+func PushCommentToQueue(topic string, message []byte) error {
+	bokersUrl := 
+}
+
 func createComment(c *fiber.Ctx) error {
 	cmt := new(Comment)
 	if err := c.BodyParser(cmt); err != nil {
